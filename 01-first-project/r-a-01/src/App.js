@@ -1,17 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import Profile from './components/Profile';
 
 const App = () => {
   return (
     <div className='app-wrapper'>
-      <header className='header'>
-        <img src='/logo.gif'></img>
-      </header>
-      <nav className='nav'>
-        <div>Profile</div>
-        <div>Messages </div>
-      </nav>
-      <div className='content'>Main content</div>
+      <Header />
+      <Navbar />
+      <Profile />
     </div>
   );
 }
