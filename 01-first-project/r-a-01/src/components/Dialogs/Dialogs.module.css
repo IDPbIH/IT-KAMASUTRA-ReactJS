@@ -3,12 +3,12 @@
     grid-template-columns: 2fr 10fr;
 }
 
-.dialogsItems{
+.dialogsItems {
     padding: 10px;
-    color:white;
+    color: white;
 }
 
-.dialogsItems .active{
+.dialogsItems .active {
     color: gold;
 }
 
@@ -17,5 +17,34 @@
 }
 
 .messages .message {
-    color:white;
+    color: white;
+}
+
+/**/
+
+.dialogsItems .active img {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    vertical-align: middle;
+}
+
+.dialogsItems .active a{
+    color: white;
+    text-decoration: none;
+}
+
+.dialogsItems .active a.activeLink{
+    color: gold;
+    text-decoration: none;
+}
+
+.messageLeft {
+    text-align: left;
+    padding-left: 100px;
+}
+
+.messageRight {
+    text-align: right;
+    padding-right: 100px;
 }
