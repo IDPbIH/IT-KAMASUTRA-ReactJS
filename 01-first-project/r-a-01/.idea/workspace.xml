@@ -20,13 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c736fd53-b8c2-4717-b561-05c025d40a8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogItem/DialogItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logo DPbIH.psd" beforeDir="false" afterPath="$PROJECT_DIR$/logo DPbIH.psd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +70,7 @@
       <workItem from="1631556696116" duration="6720000" />
       <workItem from="1631603973460" duration="1191000" />
       <workItem from="1631638281877" duration="5173000" />
-      <workItem from="1631682622665" duration="2551000" />
+      <workItem from="1631682622665" duration="4343000" />
     </task>
     <servers />
   </component>
@@ -101,9 +98,13 @@
       <screen x="0" y="0" width="1536" height="826" />
     </state>
     <state x="0" y="0" width="578" height="826" key="find.popup/0.0.1536.826@0.0.1536.826" timestamp="1631295767593" />
-    <state x="431" y="146" width="672" height="678" key="search.everywhere.popup" timestamp="1631297388033">
+    <state x="425" y="180" key="run.anything.popup" timestamp="1631687250361">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state x="431" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.826@0.0.1536.826" timestamp="1631297388033" />
+    <state x="425" y="180" key="run.anything.popup/0.0.1536.826@0.0.1536.826" timestamp="1631687250361" />
+    <state x="431" y="146" width="672" height="678" key="search.everywhere.popup" timestamp="1631686999365">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="431" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.826@0.0.1536.826" timestamp="1631686999365" />
   </component>
 </project>
