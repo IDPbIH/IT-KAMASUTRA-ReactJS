@@ -20,7 +20,14 @@ const Dialogs = (props) => {
             } else {
                 return <div className={s.messageRight}><Message message={m.message}/></div>;
             }
-        })
+        });
+
+    let newPostElement = React.createRef();
+
+    let addPost = () => {
+        let text = newPostElement.current.value;
+        alert(text);
+    };
 
 
     // let messagesElements = props.state.messages.map((e1) => isMaleName(e1) ? 1 : 0)
@@ -32,6 +39,12 @@ const Dialogs = (props) => {
             </div>
             <div className={s.messages}>
                 {messagesElements}
+                <div>
+                    <textarea ref={newPostElement}></textarea>
+                </div>
+                <div>
+                    <button onClick={addPost}>Add post</button>
+                </div>
             </div>
         </div>
     )
