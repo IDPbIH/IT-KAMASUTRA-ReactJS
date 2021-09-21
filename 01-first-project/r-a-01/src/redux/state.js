@@ -1,3 +1,4 @@
+/*
 let rerenderEntireTree = () => {
     console.log('State changed');
 }
@@ -80,4 +81,4 @@ export const subscribe = (obserever) => {
     rerenderEntireTree = obserever;
 }
 
-export default state;
+export default state;*/
