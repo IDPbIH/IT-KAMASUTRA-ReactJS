@@ -20,11 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c736fd53-b8c2-4717-b561-05c025d40a8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/redux/dialogs-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,22 +52,22 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Navbar/Sidebar/SidebarItem" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\front-end\JS\Study\RJS\Projects\01-first-project\r-a-01\src\components\Navbar" />
+      <recent name="C:\front-end\JS\Study\RJS\Projects\01-first-project\r-a-01\src\components" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\front-end\JS\Study\RJS\Projects\01-first-project\r-a-01\src\redux" />
       <recent name="C:\front-end\JS\Study\RJS\Projects\01-first-project\r-a-01\src\components\Navbar\Sidebar\SidebarItem" />
       <recent name="C:\front-end\JS\Study\RJS\Projects\01-first-project\r-a-01\src\components\Navbar\SideBar" />
       <recent name="C:\front-end\JS\Study\RJS\Projects\01-first-project\r-a-01\src\components\Dialogs\DialogItem" />
       <recent name="C:\front-end\JS\Study\RJS\Projects\01-first-project\r-a-01\src\components\Dialogs\Message" />
-      <recent name="C:\front-end\JS\Study\RJS\Projects\01-first-project\r-a-01\src\components\Profile\ProfileInfo" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\front-end\JS\Study\RJS\Projects\01-first-project\r-a-01\src\components\Navbar" />
-      <recent name="C:\front-end\JS\Study\RJS\Projects\01-first-project\r-a-01\src\components" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -87,7 +88,7 @@
       <workItem from="1631789429742" duration="3749000" />
       <workItem from="1632130755299" duration="18327000" />
       <workItem from="1632229299440" duration="15947000" />
-      <workItem from="1632258857023" duration="8147000" />
+      <workItem from="1632258857023" duration="13745000" />
     </task>
     <servers />
   </component>
