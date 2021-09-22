@@ -10,7 +10,7 @@ import Settings from "./components/Settings/Settings";
 import React from "react";
 
 const App = (props) => {
-    return (
+        return (
         <BrowserRouter>
             <div className='app-wrapper'>
                 <Header/>
