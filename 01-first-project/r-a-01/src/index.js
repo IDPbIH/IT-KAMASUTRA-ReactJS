@@ -1,9 +1,9 @@
 import reportWebVitals from './reportWebVitals';
-import ReactDOM from "react-dom";
-import {BrowserRouter} from "react-router-dom";
-import App from "./App";
-import store from "./redux/redux-store";
-import StoreContext, {Provider} from "./StoreContext";
+import ReactDOM from 'react-dom';
+import {BrowserRouter} from 'react-router-dom';
+import {Provider} from 'react-redux';
+import App from './App';
+import store from './redux/redux-store';
 
 export let rerenderEntireTree = (state) => {
     ReactDOM.render(

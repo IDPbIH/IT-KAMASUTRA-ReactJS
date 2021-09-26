@@ -21,14 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="c736fd53-b8c2-4717-b561-05c025d40a8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StoreContext.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Sidebar/Sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Sidebar/SidebarContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Sidebar/SidebarContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/sidebar-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/sidebar-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +93,9 @@
       <workItem from="1632229299440" duration="15947000" />
       <workItem from="1632258857023" duration="18179000" />
       <workItem from="1632391252904" duration="11085000" />
-      <workItem from="1632498302856" duration="9634000" />
+      <workItem from="1632498302856" duration="9690000" />
+      <workItem from="1632675006794" duration="1005000" />
+      <workItem from="1632678151639" duration="5539000" />
     </task>
     <servers />
   </component>
@@ -117,10 +119,10 @@
       <screen x="0" y="0" width="1536" height="826" />
     </state>
     <state x="530" y="212" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.826@0.0.1536.826" timestamp="1632135271255" />
-    <state x="499" y="157" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1632158321263">
+    <state x="499" y="157" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1632682293163">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state x="499" y="157" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.826@0.0.1536.826" timestamp="1632158321263" />
+    <state x="499" y="157" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.826@0.0.1536.826" timestamp="1632682293163" />
     <state x="549" y="165" key="FileChooserDialogImpl" timestamp="1632487577030">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
