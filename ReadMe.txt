@@ -1,1 +1,1 @@
-C:\FrontEnd\JS\Study\RJS\Projects\01-first-project\r-a-01
+C:\front-end\JS\Study\RJS\Projectss\01-first-project\r-a-01
