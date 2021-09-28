@@ -11,7 +11,7 @@ let initialState = {
     newPostText: 'it-kamasutra.com'
 }
 
-export const profileReducer = (state = initialState, action) => {
+export const usersReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_POST: {
             let newPost = {
@@ -39,4 +39,4 @@ export const profileReducer = (state = initialState, action) => {
 export const addPostActionCreator = () => ({type: ADD_POST});
 export const updateNewPostTextActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT, newText: text});
 
-export default profileReducer;
+export default usersReducer;
