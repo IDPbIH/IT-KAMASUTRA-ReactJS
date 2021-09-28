@@ -7,7 +7,7 @@ import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
-import {BrowserRouter, NavLink, Route} from "react-router-dom";
+import {BrowserRouter, Route} from "react-router-dom";
 
 const App = (props) => {
     return (
