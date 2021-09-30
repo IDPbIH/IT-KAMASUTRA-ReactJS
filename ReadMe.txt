@@ -1,1 +1,2 @@
-C:\front-end\JS\Study\RJS\Projectss\01-first-project\r-a-01
+IT-KAMASUTRA Курс "React JS - путь самурая 1.0", уроки, практика
+C:\front-end\JS\Study\RJS\r-a-01
