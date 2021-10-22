@@ -30,23 +30,29 @@ let Users = (props) => {
                     <div>
                         {u.followed
                             ? <button onClick={() => {
-
-                                axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}}`, { withCredentials: true }).then(response => {
-                                    if (response.data.resultCode == 0) {
-                                        props.unfollow(u.id);
-                                    }
-                                });
+                                axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`,
+                                    {
+                                        withCredentials: true,
+                                        headers: { "API-KEY": "22b94168-25c1-42a1-b082-01d927be30be" }
+                                    })
+                                    .then(response => {
+                                        if (response.data.resultCode == 0) {
+                                            props.unfollow(u.id);
+                                        }
+                                    });
 
                             }}>Unfollow</button>
                             : <button onClick={() => {
-
-                                axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}}`, {}, { withCredentials: true }).then(response => {
-                                    if (response.data.resultCode == 0) {
-                                        props.follow(u.id);
-                                    }
-                                });
-
-
+                                axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`, {},
+                                    {
+                                        withCredentials: true,
+                                        headers: { "API-KEY": "22b94168-25c1-42a1-b082-01d927be30be" }
+                                    })
+                                    .then(response => {
+                                        if (response.data.resultCode == 0) {
+                                            props.follow(u.id);
+                                        }
+                                    });
                             }}>Follow</button>
                         }
                     </div>
