@@ -9,8 +9,7 @@ import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 import HeaderContainer from "./components/Header/HeaderContainer";
-
-
+import LoginPage from "./components/Login/Login";
 
 const App = () => {
     return (
@@ -25,6 +24,7 @@ const App = () => {
                     <Route path='/news' render={() => <News/>}/>
                     <Route path='/music' render={() => <Music/>}/>
                     <Route path='/settings' render={() => <Settings/>}/>
+                    <Route path='/login' render={() => <LoginPage/>}/>
                 </div>
             </div>
         </BrowserRouter>
