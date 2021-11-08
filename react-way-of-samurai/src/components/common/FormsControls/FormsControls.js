@@ -13,7 +13,5 @@ export const FormsControl = ({ el, input, meta, ...props }) => {
     )
 }
 
-/*вместо {React.createElement(el, {...input, ...props})} <textarea placeholder={props.placeholder} моё изобретение с placeholder, а так не работало {...input} {...props} /> */
-
 export const Textarea = (props) => <FormsControl el="textarea" {...props}/>
 export const Input = (props) => <FormsControl el="input" {...props}/>
