@@ -11,13 +11,13 @@ class ProfileStatus extends React.Component {
             editMode: true,
             status: this.props.status
         })
-        this.props.updateStatus(this.state.status);
     }
 
     deactivateEditMode = () => {
         this.setState({
             editMode: false
         })
+        this.props.updateStatus(this.state.status);
     }
 
     onStatusChange = (e) => {
