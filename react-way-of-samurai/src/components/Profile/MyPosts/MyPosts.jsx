@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { maxLengthCreator, required } from '../../../utils/validators/validators';
 import s from './MyPosts.module.css';
@@ -23,29 +23,48 @@ const AddNewPostForm = (props) => {
 
 const AddNewPostFormRedux = reduxForm({ form: 'ProfileAddNewPostForm' })(AddNewPostForm);
 
-class MyPosts extends Component {
-    
-    shouldComponentUpdate(nextProps, nextState) {
-        return false;
-    }
-    
-    render() {
-        let postElements = this.props.posts.map(p => <Post message={p.message} likesCount={p.likesCount} key={p.id} />);
+const MyPosts = React.memo((props) => {
 
-        let onAddPost = (values) => {
-            this.props.addPost(values.newPostText);
-        };
+    let postElements = props.posts.map(p => <Post message={p.message} likesCount={p.likesCount} key={p.id} />);
 
-        return (
-            <div className={s.postsBlock}>
-                <h3>My posts</h3>
-                <AddNewPostFormRedux onSubmit={onAddPost} />
-                <div className={s.posts}>
-                    {postElements}
-                </div>
+    let onAddPost = (values) => {
+        props.addPost(values.newPostText);
+    };
+
+    return (
+        <div className={s.postsBlock}>
+            <h3>My posts</h3>
+            <AddNewPostFormRedux onSubmit={onAddPost} />
+            <div className={s.posts}>
+                {postElements}
             </div>
-        )
-    }
-}
+        </div>
+    )
+});
+
+// class MyPosts extends PureComponent {
+    
+//     // shouldComponentUpdate(nextProps, nextState) {
+//     //     return nextProps != this.props || nextState != this.state;
+//     // }
+    
+//     render() {
+//         let postElements = this.props.posts.map(p => <Post message={p.message} likesCount={p.likesCount} key={p.id} />);
+
+//         let onAddPost = (values) => {
+//             this.props.addPost(values.newPostText);
+//         };
+
+//         return (
+//             <div className={s.postsBlock}>
+//                 <h3>My posts</h3>
+//                 <AddNewPostFormRedux onSubmit={onAddPost} />
+//                 <div className={s.posts}>
+//                     {postElements}
+//                 </div>
+//             </div>
+//         )
+//     }
+// }
 
 export default MyPosts;
