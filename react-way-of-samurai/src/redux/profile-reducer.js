@@ -11,7 +11,6 @@ let initialState = {
         { id: 3, message: 'Yo', likesCount: 2 },
         { id: 4, message: 'Yo', likesCount: 3 }
     ],
-    newPostText: 'it-kamasutra.com',
     profile: null,
     status: ''
 }
