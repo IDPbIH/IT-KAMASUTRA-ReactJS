@@ -1,17 +1,47 @@
 import React from "react";
+import { Field } from "redux-form";
 import styles from "./FormsControls.module.css";
 
-export const FormsControl = ({ el, input, meta, ...props }) => {
-    const hasError = meta.touched && meta.error;
+const FormControl = ({input, meta: {touched, error}, children}) => {
+    const hasError = touched && error;
     return (
-        <div className={styles.formControl + " " + (hasError ? styles.error : '')}>
+        <div className={styles.formControl + " " + (hasError ? styles.error : "")}>
             <div>
-                {React.createElement(el, {...input, ...props})}
+                {children}
             </div>
-            {hasError && <span>{meta.error}</span>}
+            {hasError && <span>{error}</span>}
         </div>
     )
 }
 
-export const Textarea = (props) => <FormsControl el="textarea" {...props}/>
-export const Input = (props) => <FormsControl el="input" {...props}/>
+export const Textarea = (props) => {
+    const {input, meta, child, ...restProps} = props;
+    return <FormControl {...props}><textarea {...input} {...restProps} /></FormControl>
+}
+
+export const Input = (props) => {
+    const {input, meta, child, ...restProps} = props;
+    return <FormControl {...props}><input {...input} {...restProps} /></FormControl>
+}
+
+// мой допиленный
+// export const FormsControl = ({ el, input, meta, ...props }) => {
+//     const hasError = meta.touched && meta.error;
+//     return (
+//         <div className={styles.formControl + " " + (hasError ? styles.error : '')}>
+//             <div>
+//                 {React.createElement(el, { ...input, ...props })}
+//             </div>
+//             {hasError && <span>{meta.error}</span>}
+//         </div>
+//     )
+// }
+
+// export const Textarea = (props) => <FormsControl el="textarea" {...props} />
+// export const Input = (props) => <FormsControl el="input" {...props} />
+
+export const createField = (placeholder, name, validators, component, props = {}, text = '') => (
+    <div>
+        <Field placeholder={placeholder} name={name} validate={validators} component={component} {...props} /> {text}
+    </div>
+)
