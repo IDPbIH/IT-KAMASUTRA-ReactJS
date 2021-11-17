@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import './App.css';
 import { BrowserRouter, Route, withRouter } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
-import ProfileContainer from './components/Profile/ProfileContainer';
-import DialogsContainer from "./components/Dialogs/DialogsContainer";
+
 import UsersContainer from "./components/Users/UsersContainer";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
@@ -15,6 +14,11 @@ import { initializeApp } from '../src/redux/app-reducer';
 import { compose } from "redux";
 import Preloader from "./components/common/Preloader/Preloader";
 import store from "./redux/redux-store";
+
+// import DialogsContainer from "./components/Dialogs/DialogsContainer";
+// import ProfileContainer from './components/Profile/ProfileContainer';
+const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
+const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
 
 class App extends Component {
     componentDidMount() {
@@ -32,7 +36,9 @@ class App extends Component {
                     <Navbar />
                     <div className='app-wrapper-content'>
                         <Route path='/dialogs' render={() => <DialogsContainer />} />
-                        <Route path='/profile/:userId?' render={() => <ProfileContainer />} />
+                        <Route path='/profile/:userId?' render={() => {
+                            return <Suspense fallback={}<ProfileContainer />
+                        }} />
                         <Route path='/users' render={() => <UsersContainer />} />
                         <Route path='/news' render={() => <News />} />
                         <Route path='/music' render={() => <Music />} />
@@ -51,10 +57,10 @@ const mapStateToProps = (state) => ({
 
 let AppContainer = compose(
     withRouter,
-    connect(mapStateToProps, {initializeApp}))(App);
+    connect(mapStateToProps, { initializeApp }))(App);
 
 const SamuraiJSApp = (props) => {
-   return <BrowserRouter>
+    return <BrowserRouter>
         <Provider store={store}>
             <AppContainer />
         </Provider>
