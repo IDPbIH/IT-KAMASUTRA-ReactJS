@@ -14,6 +14,7 @@ import { initializeApp } from '../src/redux/app-reducer';
 import { compose } from "redux";
 import Preloader from "./components/common/Preloader/Preloader";
 import store from "./redux/redux-store";
+import { withSuspense } from "./hoc/withSuspense";
 
 // import DialogsContainer from "./components/Dialogs/DialogsContainer";
 // import ProfileContainer from './components/Profile/ProfileContainer';
@@ -35,10 +36,26 @@ class App extends Component {
                     <HeaderContainer />
                     <Navbar />
                     <div className='app-wrapper-content'>
-                        <Route path='/dialogs' render={() => <DialogsContainer />} />
-                        <Route path='/profile/:userId?' render={() => {
-                            return <Suspense fallback={}<ProfileContainer />
-                        }} />
+                        {/* 94 pots & me version*/}
+                        <React.Suspense fallback={<div>Loading...</div>}>
+                            <Route path='/dialogs' render={() => <DialogsContainer />} />
+                            <Route path='/profile/:userId?' render={() => <ProfileContainer />} />
+                        </React.Suspense>
+                        {/* 94 Dimych version*/}
+                        {/* <Route path='/dialogs' render={withSuspense(DialogsContainer)
+                            // () => {
+                            // return <React.Suspense fallback={<div>Loading...</div>}>
+                            //     <DialogsContainer />
+                            // </React.Suspense>
+                            // }
+                        } />
+                        <Route path='/profile/:userId?' render={withSuspense(ProfileContainer)
+                            // () => {
+                            //     return <React.Suspense fallback={<div>Loading...</div>}>
+                            //         <ProfileContainer />
+                            //     </React.Suspense>
+                            // }
+                        } /> */}
                         <Route path='/users' render={() => <UsersContainer />} />
                         <Route path='/news' render={() => <News />} />
                         <Route path='/music' render={() => <Music />} />
