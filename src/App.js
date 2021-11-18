@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import './App.css';
-import { BrowserRouter, Route, withRouter } from "react-router-dom";
+import { HashRouter, BrowserRouter, Route, withRouter } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
-
 import UsersContainer from "./components/Users/UsersContainer";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
@@ -31,7 +30,8 @@ class App extends Component {
             return <Preloader />
         }
         return (
-            <BrowserRouter>
+            <HashRouter>
+                {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
                 <div className='app-wrapper'>
                     <HeaderContainer />
                     <Navbar />
@@ -63,7 +63,8 @@ class App extends Component {
                         <Route path='/login' render={() => <LoginPage />} />
                     </div>
                 </div>
-            </BrowserRouter>
+            </HashRouter>
+            // </BrowserRouter>
         );
     }
 }
