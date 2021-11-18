@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/IT-KAMASUTRA-ReactJS/static/css/main.da99a5c0.chunk.css",
-    "main.js": "/IT-KAMASUTRA-ReactJS/static/js/main.14dea221.chunk.js",
-    "main.js.map": "/IT-KAMASUTRA-ReactJS/static/js/main.14dea221.chunk.js.map",
+    "main.js": "/IT-KAMASUTRA-ReactJS/static/js/main.c0e0aee9.chunk.js",
+    "main.js.map": "/IT-KAMASUTRA-ReactJS/static/js/main.c0e0aee9.chunk.js.map",
     "runtime-main.js": "/IT-KAMASUTRA-ReactJS/static/js/runtime-main.7b287a40.js",
     "runtime-main.js.map": "/IT-KAMASUTRA-ReactJS/static/js/runtime-main.7b287a40.js.map",
     "static/js/2.31ce293e.chunk.js": "/IT-KAMASUTRA-ReactJS/static/js/2.31ce293e.chunk.js",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.7b287a40.js",
     "static/js/2.31ce293e.chunk.js",
     "static/css/main.da99a5c0.chunk.css",
-    "static/js/main.14dea221.chunk.js"
+    "static/js/main.c0e0aee9.chunk.js"
   ]
 }
