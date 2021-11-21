@@ -21,8 +21,18 @@ const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsCo
 const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
 
 class App extends Component {
+    catchAllUnhandledErrors = (promiseRejectionEvent) => {
+        // alert('Some error occured');
+        // console.error(promiseRejectionEvent);
+    }
+
     componentDidMount() {
         this.props.initializeApp();
+        // window.addEventListener('unhandledrejection', this.catchAllUnhandledErrors);
+    }
+
+    componentWillUnmount() {
+        // window.removeEventListener('unhandledrejection', this.catchAllUnhandledErrors);
     }
 
     render() {
@@ -57,15 +67,15 @@ class App extends Component {
                             //     </React.Suspense>
                             // }
                         } /> */}
-                        <Switch>
-                            <Route path='/' render={() => <Redirect to={'/profile'} />} />
+                        {/* <Switch> */}
+                            {/* <Route path='/' render={() => <Redirect to={'/profile'} />} /> */}
                             <Route path='/users' render={() => <UsersContainer />} />
                             <Route path='/news' render={() => <News />} />
                             <Route path='/music' render={() => <Music />} />
                             <Route path='/settings' render={() => <Settings />} />
                             <Route path='/login' render={() => <LoginPage />} />
-                            <Route path='*' render={() => <div>NOT FOUND</div>} />
-                        </Switch>
+                            {/* <Route path='*' render={() => <div>NOT FOUND</div>} /> */}
+                        {/* </Switch> */}
                     </div>
                 </div>
                 {/* </HashRouter> //95*/}
